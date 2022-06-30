@@ -1,65 +1,86 @@
 var timeEl = document.querySelector(".time");
-var mainEl = document.getElementById("timer");//list global variables:
+var mainEl = document.getElementById("timer");//list global variables: 
+var btn1 = document.querySelector("#btn1") 
+var btn2 = document.querySelector("#btn2") 
+var btn3 = document.querySelector("#btn3") 
+var btn4 = document.querySelector("#btn4") 
 var questions = []    
-
+var question1 =
+var question2 =
+var question3 =
+var question4 =
 //questions array
-    var questions = [
+    var question1 = [
         {
-            question: 2+2,
-            answers: [3,4,5,6],
-            correctAnswer:"4"
+            question: "What is Sasuke's clan?",
+            answers: [Uchicha,Uzumaki,Hyuga, Haruno],
+            correctAnswer:"Uchiha"
         }
     ]
-    var questions = [
+    var question2 = [
         {
-            question: 3+3,
-            answers: [3,4,5,6],
-            correctAnswer:"6"
+            question: "How many tails does Naruto's tailed beast have?",
+            answers: [9,8,5,1],
+            correctAnswer:"9"
         }
     ]
-    var questions = [
+    var question3 = [
         {
-            question: 4+4,
-            answers: [3,4,8,6],
-            correctAnswer:"8"
+            question:"What is Naruto's dad's name?",
+            answers: [Eleven,So-Joon,Minato, Hiruzen],
+            correctAnswer:"Minato"
         }
     ]
-    var questions = [
+    var question4 = [
         {
-            question: 5+5,
-            answers: [3,10,5,6],
-            correctAnswer:"10"
+            question: "What is the name of the 9-tailed beast?"
+            answers: [Shukaku, Saiken, Isobu, Kurama],
+            correctAnswer:"Kuruma"
         }
     ]
     console.log(questions[2].answers[2])
 
-   
+  
+getElementById(#qbox).textContent("question")
+
     //currentQuestion array = 0 (increment)
-    //time left
     //score
     //var btn1 = querySelector("btn-1")
 //timeLeft
 
 //startGame() - function
-    //triggered event listener on start game button
-    //start timer
+function startGame() {
+    getElementById(.starbtnbox).addEventListener("click", setTime);
+
+    setTime();
+}
     //setup first questions
     //loadQuestion()
-getElementById(#qbox).textContent(question.random)
-//timer - start and render
-    //set interval()
+getElementById(#qbox).textContent(questions.random)
+
+function questionSet(){
+    getElementById(h1).textContent(questions)
+    .addEventListener("click",  )
+    console.log(questions)
+}
+//next question on click
+function displayQuestion()
+{
 
 
-    // var secondsLeft = 60;
-    // function setTime() {
-    //     var timerInterval = setInterval(function() {
-    //         secondsLeft--;
-    //         timeEl.textContent = "Time left:" + secondsLeft
-    //     if(secondsLeft === 0) {clearInterval(timerInterval);
-    //     }
-    //     }, 1000);
-    // }
-    // setTime();
+}
+   //timer
+var secondsLeft = 60;
+    function setTime() {
+        var timerInterval = setInterval(function() {
+            secondsLeft--;
+            timeEl.textContent = "Time left:" + secondsLeft
+        if(secondsLeft === 0) {alert('Time's up!);
+        }
+        }, 1000);
+    if seconds
+    }
+    setTime();
 
 
 //loadQuestion()
