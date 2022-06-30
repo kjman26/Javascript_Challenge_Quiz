@@ -1,0 +1,63 @@
+header {
+        text-align: center;
+        font-size: 50px;
+        line-height: 200px; 
+        color: black; 
+    }  
+
+
+h1 {
+    z-index: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    font-size: 40px;
+    margin-top: -30px;
+    color: whitesmoke;
+    background-color: black;
+    
+}
+.buttons {
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+      }
+
+.boxes {
+    flex: 1 1 calc(100% - 50px);
+   
+}
+.options{
+    background-color: orangered;
+    border-style:double;
+    border-width: 10px;
+    border-color: blue;
+    height: 80px;
+    width: 150px;
+}
+
+a:hover{
+    outline:none;
+    border-color:whitesmoke;
+}
+.options:hover{ 
+    outline: none;
+    border-color: #8ac4ff;
+    flex: 1 1 calc(100% - 50px);
+}
+ul{
+    list-style-type: none;
+    display: grid;
+}
+
+#container {
+    background-image: url('animebackground.jpg');
+    margin-top: 150px;
+  
+}
+
+@media 
